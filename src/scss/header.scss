@@ -1,0 +1,79 @@
+nav{
+	background: #111111;
+	.nav-wrapper{
+		.row{
+			.col.s12{
+				a{
+					.logo{
+						display: flex;
+					    align-items: center;
+					    flex-flow: column wrap;
+					    height: 70px;
+					    margin-top: -7px;
+					    width: 50px;
+					    justify-content: center;
+					    	.line1{
+					    		animation: showLine1 1s infinite;
+					    	}
+							.line1, .line2{
+							display: block;
+							height: 4px;
+							width: 0px;
+							background: #fff;
+							}
+							.line2{
+								margin-top: 10px;
+								animation: showLine2 1s infinite;
+								animation-delay: .3s;
+							}
+							.line3{
+								display: block;
+								height: 4px;
+								width: 50px;
+								background: #fff;
+								transform: rotate(100deg);
+								margin-top: -7px;
+								transition: .5s all ease;
+							}
+							&:hover{
+								.line1, .line2 {
+									animation: none;
+									width: 30px;
+								}
+								.line3{
+									transform: rotate(180deg);
+									margin-top: 10px;
+									width: 30px;
+									display: block;
+								}
+							}
+					}
+					
+				}
+			}
+		}
+	}
+}
+@keyframes showLine1{
+	0%   {width: 0px;}
+    //25%  {transform: scale(0.4);}
+    //50%  {width: 15px;}
+    //75%  {transform: scale(0.4);}
+    100% {width: 30px;}
+}
+
+@keyframes showLine2{
+	0%   {width: 0px;}
+    //25%  {transform: scale(0.4);}
+    //50%  {width: 15px;}
+    //75%  {transform: scale(0.4);}
+    100% {width: 30px;}
+}
+
+@keyframes showLine3{
+	0%   {width: 0px;}
+    //25%  {transform: scale(0.4);}
+    //50%  {width: 15px;}
+    //75%  {transform: scale(0.4);}
+    100% {width: 30px;}
+}

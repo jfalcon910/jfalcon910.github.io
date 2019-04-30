@@ -1,0 +1,16 @@
+.banner{
+	.slider{
+		height: calc(100vh - 65px) !important;
+		.slides{
+			height: calc(100vh - 64px) !important;
+			.caption{
+				h3{
+					margin:0;
+				}
+				h5{
+					margin:0;
+				}
+			}
+		}
+	}
+}
