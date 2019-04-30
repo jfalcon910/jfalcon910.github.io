@@ -47,7 +47,7 @@ gulp.task('js', () => {
 
 gulp.task('serve', ['sass','pug'], () => {
 	browserSync.init({
-		server:'./src'
+		server:'./'
 	});
 
 	gulp.watch([
