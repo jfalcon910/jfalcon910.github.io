@@ -28,7 +28,7 @@ gulp.task('pug', () => {
 		'src/pug/*.pug'
 	])
 	.pipe(pug())
-	.pipe(gulp.dest('src/'))
+	.pipe(gulp.dest('./'))
 	.pipe(browserSync.stream());
 
 });
